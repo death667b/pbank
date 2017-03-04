@@ -3,4 +3,4 @@ theme: jekyll-theme-cayman
 title: Piggy Bank
 description: Help you save your money by budgeting
 
-show_downloads: ["false"]
+show_downloads: false
