@@ -15,7 +15,7 @@
     background-color: #043368; background-image: linear-gradient(120deg, #043368, #627a92);
 }
 
-.arrow-maybe li:before {
+.arrow-maybe > li:before {
     /*
     The desired width gets defined in two places: The element width, and background size.
     The height only gets defined once, in background size.
