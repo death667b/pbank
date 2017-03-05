@@ -8,7 +8,7 @@
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="docs/mystyles.css">
-
+    <link rel="stylesheet" type="text/css" href="docs/slick/slick.css"/>
   </head>
   <body >  <!--   -->
     <section class="page-header" style="background-color: #043368; background-image: linear-gradient(180deg, #043368, #627a92);">
@@ -41,13 +41,10 @@
         <h3>Wouldn't that be great?</h3>
         <p style="padding-left: 20px;">This way, you don't spend all of your rent money on beer or cloths!</p>
         <h3>What are people saying about us already?</h3>
-          <div class="autoplay" data-slick='{"slidesToShow": 6, "slidesToScroll": 1}'>
-            <div><h3>1</h3></div>
-            <div><h3>2</h3></div>
-            <div><h3>3</h3></div>
-            <div><h3>4</h3></div>
-            <div><h3>5</h3></div>
-            <div><h3>6</h3></div>
+          <div class="auto-text">
+            <div>your content 1</div>
+            <div>your content 2</div>
+            <div>your content 3</div>
           </div>
         <h3>Why don't you register your interest?</h3>
         <div style="padding-left: 20px">
@@ -77,11 +74,15 @@
       </script>
     {% endif %}
     <script type="text/javascript" src="https://code.jquery.com/jquery-git.min.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="docs/slick/slick.min.js"></script>
     <script>
-      $('.autoplay').slick({
-        autoplay: true,
-        autoplaySpeed: 1000,
+      $(document).ready(function(){
+        $('.auto-text').slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1000,
+        });
       });
     </script>
   </body>
