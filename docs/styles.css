@@ -12,6 +12,5 @@
 }
 
 .page-header {
-    background-color: #043368;
-    background-image: linear-gradient(120deg, #043368, #627a92);
+    background-color: #043368; background-image: linear-gradient(120deg, #043368, #627a92);
 }
