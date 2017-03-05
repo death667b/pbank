@@ -1,4 +1,9 @@
 .header-list {
     display: flex;
-    list-style-type: none; 
+    list-style-type: none;
+    align-items: center;
+}
+
+.header-list li {
+    align-items: center;
 }
