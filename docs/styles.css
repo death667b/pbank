@@ -1,6 +1,6 @@
 .header-list {
+    justify-content: center;
     display: flex;
-    
 }
 
 .header-list li {
